@@ -14,24 +14,25 @@ path = "src/animation_no_embedded_graphics.rs"
 
 
 [dependencies]
-embassy-embedded-hal = { version = "0.1.0", git = "https://github.com/embassy-rs/embassy.git", features = [
+embassy-embedded-hal = { version = "0.2.0", git = "https://github.com/embassy-rs/embassy.git", features = [
     "defmt",
 ] }
-embassy-sync = { version = "0.5.0", git = "https://github.com/embassy-rs/embassy.git", features = [
+embassy-sync = { version = "0.6.0", git = "https://github.com/embassy-rs/embassy.git", features = [
     "defmt",
 ] }
-embassy-executor = { version = "0.5.0", git = "https://github.com/embassy-rs/embassy.git", features = [
+embassy-executor = { version = "0.6.0", git = "https://github.com/embassy-rs/embassy.git", features = [
     "arch-cortex-m",
     "executor-thread",
     "executor-interrupt",
     "defmt",
     "integrated-timers",
 ] }
-embassy-rp = { version = "0.1.0", git = "https://github.com/embassy-rs/embassy.git", features = [
+embassy-rp = { version = "0.2.0", git = "https://github.com/embassy-rs/embassy.git", features = [
     "defmt",
     "unstable-pac",
     "time-driver",
     "critical-section-impl",
+    "rp2040",
 ] }
 
 embassy-time = { version = "0.3", git = "https://github.com/embassy-rs/embassy.git", features = [
@@ -53,7 +54,7 @@ futures = { version = "0.3.17", default-features = false, features = [
 ] }
 heapless = "0.8"
 portable-atomic = { version = "1.5", features = ["critical-section"] }
-st7567_rs = "0.1.2"
+st7567_rs = { path = "/Users/tracyspacy/Desktop/rust_embedded/st7567_rs" }
 
 [[example]]
 name = "embedded_graphics_hello_world"
