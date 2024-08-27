@@ -53,7 +53,7 @@ futures = { version = "0.3.17", default-features = false, features = [
 ] }
 heapless = "0.8"
 portable-atomic = { version = "1.5", features = ["critical-section"] }
-st7567_rs = "0.1.1"
+st7567_rs = "0.1.2"
 
 [[example]]
 name = "embedded_graphics_hello_world"
