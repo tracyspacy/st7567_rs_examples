@@ -57,8 +57,6 @@ async fn main(_spawner: Spawner) {
     display.backlight(BacklightStatus::On).unwrap();
     //ignoring st7567::DisplayErrors::outOfBounds
     loop {
-        count += 1;
-
         if count <= 128 {
             count += 1;
         } else {
@@ -73,7 +71,7 @@ async fn main(_spawner: Spawner) {
             let _ = display.set_pixel(127 - count, y, true);
         }
         display.show().unwrap();
-        Timer::after_millis(100).await;
+        Timer::after_millis(50).await;
         display.clear().unwrap();
     }
 }

@@ -1,5 +1,5 @@
 [package]
-name = "st7567_rs_examples"
+name = "st7567_rs_embassy_examples"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,6 +7,7 @@ edition = "2021"
 [[bin]]
 name = "embedded_graphics_hello_world"
 path = "src/embedded_graphics_hello_world.rs"
+
 
 [[bin]]
 name = "animation_no_embedded_graphics"
@@ -54,8 +55,4 @@ futures = { version = "0.3.17", default-features = false, features = [
 ] }
 heapless = "0.8"
 portable-atomic = { version = "1.5", features = ["critical-section"] }
-st7567_rs = "0.1.2"
-
-[[example]]
-name = "embedded_graphics_hello_world"
-path = "src/rp/embedded_graphics_hello_world/embedded_graphics_hello_world.rs"
+st7567_rs = "=0.1.2"
