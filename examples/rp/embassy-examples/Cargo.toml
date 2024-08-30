@@ -13,6 +13,9 @@ path = "src/embedded_graphics_hello_world.rs"
 name = "animation_no_embedded_graphics"
 path = "src/animation_no_embedded_graphics.rs"
 
+[[bin]]
+name = "image_raw"
+path = "src/image_raw.rs"
 
 [dependencies]
 embassy-embedded-hal = { version = "0.2.0", git = "https://github.com/embassy-rs/embassy.git", features = [

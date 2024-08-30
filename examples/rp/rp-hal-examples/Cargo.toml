@@ -13,6 +13,10 @@ path = "src/embedded_graphics_hello_world.rs"
 name = "animation_no_embedded_graphics"
 path = "src/animation_no_embedded_graphics.rs"
 
+[[bin]]
+name = "image_raw"
+path = "src/image_raw.rs"
+
 [dependencies]
 cortex-m = "0.7"
 cortex-m-rt = "0.7"
