@@ -84,7 +84,14 @@ fn main() -> ! {
     );
 
     let spi_device = ExclusiveDevice::new_no_delay(spi, _cs);
-    let mut display = ST7567::new(dcx, blx, rst, spi_device);
+    let mut display = ST7567::new(
+        dcx,
+        blx,
+        rst,
+        spi_device,
+        st7567_rs::ScreenDirection::Normal,
+        st7567_rs::Bias::Bias1_7,
+    );
     display.init().unwrap();
 
     //image drawing https://docs.rs/embedded-graphics/latest/embedded_graphics/image/struct.ImageRaw.html

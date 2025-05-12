@@ -1,6 +1,6 @@
 [package]
 name = "st7567_rs_embassy_examples"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -18,20 +18,19 @@ name = "image_raw"
 path = "src/image_raw.rs"
 
 [dependencies]
-embassy-embedded-hal = { version = "0.2.0", git = "https://github.com/embassy-rs/embassy.git", features = [
+embassy-embedded-hal = { version = "0.3.0", git = "https://github.com/embassy-rs/embassy.git", features = [
     "defmt",
 ] }
 embassy-sync = { version = "0.6.0", git = "https://github.com/embassy-rs/embassy.git", features = [
     "defmt",
 ] }
-embassy-executor = { version = "0.6.0", git = "https://github.com/embassy-rs/embassy.git", features = [
+embassy-executor = { version = "0.7.0", git = "https://github.com/embassy-rs/embassy.git", features = [
     "arch-cortex-m",
     "executor-thread",
     "executor-interrupt",
     "defmt",
-    "integrated-timers",
 ] }
-embassy-rp = { version = "0.2.0", git = "https://github.com/embassy-rs/embassy.git", features = [
+embassy-rp = { version = "0.4.0", git = "https://github.com/embassy-rs/embassy.git", features = [
     "defmt",
     "unstable-pac",
     "time-driver",
@@ -39,7 +38,7 @@ embassy-rp = { version = "0.2.0", git = "https://github.com/embassy-rs/embassy.g
     "rp2040",
 ] }
 
-embassy-time = { version = "0.3", git = "https://github.com/embassy-rs/embassy.git", features = [
+embassy-time = { version = "0.4", git = "https://github.com/embassy-rs/embassy.git", features = [
     "defmt",
     "defmt-timestamp-uptime",
 ] }
@@ -58,4 +57,4 @@ futures = { version = "0.3.17", default-features = false, features = [
 ] }
 heapless = "0.8"
 portable-atomic = { version = "1.5", features = ["critical-section"] }
-st7567_rs = "=0.1.2"
+st7567_rs = "=0.1.3"

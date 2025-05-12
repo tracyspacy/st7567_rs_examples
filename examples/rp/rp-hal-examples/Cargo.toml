@@ -1,7 +1,7 @@
 [package]
 edition = "2021"
 name = "st7567_rs_rp_hal_examples"
-version = "0.1.0"
+version = "0.1.1"
 license = "MIT OR Apache-2.0"
 
 
@@ -29,7 +29,7 @@ rp2040-hal = "0.10.0"
 # We're using a Pico by default on this template
 rp-pico = "0.9"
 embedded-hal-bus = "0.1.0"
-st7567_rs = "=0.1.2"
+st7567_rs = "=0.1.3"
 embedded-graphics = "0.8.1"
 heapless = "0.8.0"
 # but you can use any BSP. Uncomment this to use the pro_micro_rp2040 BSP instead

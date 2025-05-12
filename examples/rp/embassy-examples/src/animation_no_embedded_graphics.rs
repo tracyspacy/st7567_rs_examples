@@ -47,7 +47,14 @@ async fn main(_spawner: Spawner) {
     let mut _display_spi = SpiDeviceWithConfig::new(spi_bus, _csx, display_config);
 
     // display
-    let mut display = ST7567::new(_dcx, _blx, _rst, _display_spi);
+    let mut display = ST7567::new(
+        _dcx,
+        _blx,
+        _rst,
+        _display_spi,
+        st7567_rs::ScreenDirection::Normal,
+        st7567_rs::Bias::Bias1_7,
+    );
 
     display.init().unwrap();
 
